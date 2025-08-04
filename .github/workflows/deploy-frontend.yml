@@ -28,6 +28,8 @@ jobs:
       
     - name: Build project
       run: npm run build
+      env:
+        VITE_API_URL: https://web-production-d5c5.up.railway.app
       
     - name: Deploy to Vercel
       uses: amondnet/vercel-action@v25
